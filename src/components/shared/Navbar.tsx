@@ -1,8 +1,9 @@
-import React from "react";
+import Image from "next/image";
+import logo from "@/assets/book.ico";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="container mx-auto navbar my-2">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,7 +36,10 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Book Vibe</a>
+        <div className="flex items-center gap-2">
+          <Image src={logo} width={25} height={25} alt="logo"></Image>
+          <h2 className="font-bold text-xl">Book Vibe</h2>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
