@@ -51,6 +51,9 @@ const Navbar = () => {
           <li className="text-xl font-semibold">
             <Link href="/listed-books">Listed Books</Link>
           </li>
+          <li className="text-xl font-semibold">
+            <Link href="/read-books">Pages to Read</Link>
+          </li>
         </ul>
       </div>
       <div className="navbar-end gap-2">
