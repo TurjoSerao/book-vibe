@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logo from "@/assets/book.ico";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -28,8 +29,8 @@ const Navbar = () => {
             tabIndex={-1}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <li>
-              <a>Item 1</a>
+            <li className="text-2xl font-semibold">
+              <Link href="/books">Books</Link>
             </li>
             <li>
               <a>Item 3</a>
@@ -43,8 +44,8 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
+          <li className="text-xl font-semibold">
+            <Link href="/books">Books</Link>
           </li>
 
           <li>
