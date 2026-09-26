@@ -18,7 +18,7 @@ const ListedBooks = () => {
     } else if (sortBy === "pages") {
       sortedBooks.sort((a, b) => b.totalPages - a.totalPages);
     } else if (sortBy === "year") {
-      sortBooks.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
+      sortedBooks.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
     }
     return sortedBooks;
   };
@@ -124,7 +124,7 @@ const EmptyState = ({
   description: string;
 }) => {
   return (
-    <div className="flex min-h-[280px] flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-6 text-center">
+    <div className="flex min-h-70 flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-6 text-center">
       <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-50 text-2xl">
         📚
       </div>

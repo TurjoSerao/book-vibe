@@ -110,7 +110,7 @@ const ReadBooks = () => {
           {/* Chart */}
           {readBooks.length > 0 ? (
             <div className="w-full overflow-x-auto">
-              <div className="min-w-[600px]">
+              <div className="min-w-150">
                 <BarChart
                   style={{
                     width: "100%",
@@ -189,7 +189,7 @@ const ReadBooks = () => {
               </div>
             </div>
           ) : (
-            <div className="flex min-h-[350px] flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-6 text-center">
+            <div className="flex min-h-87.5 flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-6 text-center">
               <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-emerald-50 text-2xl">
                 📚
               </div>
